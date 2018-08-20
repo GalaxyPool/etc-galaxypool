@@ -37,7 +37,7 @@ GoLang
     sudo mv go /usr/local
 
 Install Redis Server
-   
+
     sudo apt-get install redis-server
 
 NodeJS
@@ -46,13 +46,13 @@ NodeJS
     sudo apt-get install -y nodejs
     mkdir ~/.node
     nano ~/.npmrc
-    
+
 Add this line to file
 
     prefix = ~/.node  
 
 Then
-	
+
 	nano ~/.profile
 
 Add these lines to file
@@ -61,8 +61,8 @@ Add these lines to file
     NODE_PATH="$HOME/.node/lib/node_modules:$NODE_PATH"  
     MANPATH="$HOME/.node/share/man:$MANPATH"      
     export PATH=$PATH:/usr/local/go/bin
-    
-Close file and reload with 
+
+Close file and reload with
 
     source ~/.profile
 
@@ -70,15 +70,15 @@ install  [go-ethereumclassic](https://github.com/ethereumproject/go-ethereum/rel
 
 Clone & compile:
 
-    git clone https://github.com/Locky7/open-etc-pool.git
-    cd open-etc-pool
+    git clone https://github.com/GalaxyPool/etc-galaxypool.git
+    cd etc-galaxypool
     make
 
 Install redis-server.
 
 ### Running Pool
 
-    ./build/bin/open-etc-pool config.json
+    ./build/bin/etc-galaxypool config.json
 
 You can use Ubuntu upstart - check for sample config in <code>upstart.conf</code>.
 
@@ -87,7 +87,7 @@ You can use Ubuntu upstart - check for sample config in <code>upstart.conf</code
 Install nginx
 
     sudo apt-get install nginx
-        
+
 The frontend is a single-page Ember.js application that polls the pool API to render miner stats.
 
     cd www
@@ -95,7 +95,7 @@ The frontend is a single-page Ember.js application that polls the pool API to re
 Change <code>ApiUrl: '//example.net/'</code> in <code>www/config/environment.js</code> to match your domain name. Also don't forget to adjust other options.
 
     nano config/environment.js
-    
+
 Now install & build.
 
     sudo npm install -g ember-cli@2.4.3
@@ -104,7 +104,7 @@ Now install & build.
     bower install
     sudo ./build.sh
 
-Configure nginx to serve API on <code>/api</code> subdirectory. 
+Configure nginx to serve API on <code>/api</code> subdirectory.
 
     upstream api {
     	    server 127.0.0.1:8080;
@@ -119,8 +119,8 @@ Add this setting after <code>location /</code>:
 	location /api {
 		proxy_pass http://api;
 	}
-	
-See example [nginx-default](https://github.com/Locky7/open-etc-pool/blob/master/misc/nginx-default.conf)
+
+See example [nginx-default](https://github.com/GalaxyPool/etc-galaxypool/blob/master/misc/nginx-default.conf)
 
 #### Customization
 
@@ -137,7 +137,7 @@ in order to customise the frontend.
 
 Configuration is actually simple, just read it twice and think twice before changing defaults.
 
-See 
+See
 
 **Don't copy config directly from this manual. Use the example config from the package,
 otherwise you will get errors on start because of JSON comments.**

@@ -10,11 +10,11 @@ fi
 # Create fake Go workspace if it doesn't exist yet.
 workspace="$PWD/build/_workspace"
 root="$PWD"
-ethdir="$workspace/src/github.com/Locky7"
-if [ ! -L "$ethdir/open-etc-pool" ]; then
+ethdir="$workspace/src/github.com/GalaxyPool"
+if [ ! -L "$ethdir/etc-galaxypool" ]; then
     mkdir -p "$ethdir"
     cd "$ethdir"
-    ln -s ../../../../../. open-etc-pool
+    ln -s ../../../../../. etc-galaxypool
     cd "$root"
 fi
 
@@ -25,8 +25,8 @@ GOBIN="$PWD/build/bin"
 export GOPATH GOBIN
 
 # Run the command inside the workspace.
-cd "$ethdir/open-etc-pool"
-PWD="$ethdir/open-etc-pool"
+cd "$ethdir/etc-galaxypool"
+PWD="$ethdir/etc-galaxypool"
 
 # Launch the arguments with the configured environment.
 exec "$@"

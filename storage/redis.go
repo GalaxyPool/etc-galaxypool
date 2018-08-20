@@ -10,7 +10,7 @@ import (
 	"github.com/ethereumproject/go-ethereum/common"
 	"gopkg.in/redis.v3"
 
-	"github.com/Locky7/open-etc-pool/util"
+	"github.com/GalaxyPool/etc-galaxypool/util"
 )
 
 type Config struct {

@@ -1,5 +1,5 @@
 {
-	"threads": 1,
+	"threads": 2,
 	"coin": "etc",
 	"name": "api",
 
@@ -52,9 +52,9 @@
 		"purgeInterval": "10m",
 		"listen": "0.0.0.0:8080",
 		"statsCollectInterval": "5s",
-		"hashrateWindow": "30m",
-		"hashrateLargeWindow": "3h",
-		"luckWindow": [64, 128, 256],
+		"hashrateWindow": "60m",
+		"hashrateLargeWindow": "6h",
+		"luckWindow": [64, 128, 256, 512],
 		"payments": 30,
 		"blocks": 50
 	},
