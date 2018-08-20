@@ -11,10 +11,10 @@ import (
 
 	"github.com/yvasiyarov/gorelic"
 
-	"github.com/Locky7/open-etc-pool/api"
-	"github.com/Locky7/open-etc-pool/payouts"
-	"github.com/Locky7/open-etc-pool/proxy"
-	"github.com/Locky7/open-etc-pool/storage"
+	"github.com/GalaxyPool/etc-galaxypool/api"
+	"github.com/GalaxyPool/etc-galaxypool/payouts"
+	"github.com/GalaxyPool/etc-galaxypool/proxy"
+	"github.com/GalaxyPool/etc-galaxypool/storage"
 )
 
 var cfg proxy.Config

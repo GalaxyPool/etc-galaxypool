@@ -5,8 +5,8 @@ import (
 	"os"
 	"testing"
 
-	"github.com/Locky7/open-etc-pool/rpc"
-	"github.com/Locky7/open-etc-pool/storage"
+	"github.com/GalaxyPool/etc-galaxypool/rpc"
+	"github.com/GalaxyPool/etc-galaxypool/storage"
 )
 
 func TestMain(m *testing.M) {

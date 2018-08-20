@@ -9,8 +9,8 @@ import (
 
 	"github.com/ethereumproject/go-ethereum/common"
 
-	"github.com/Locky7/open-etc-pool/rpc"
-	"github.com/Locky7/open-etc-pool/util"
+	"github.com/GalaxyPool/etc-galaxypool/rpc"
+	"github.com/GalaxyPool/etc-galaxypool/util"
 )
 
 const maxBacklog = 3

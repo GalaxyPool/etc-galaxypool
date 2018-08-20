@@ -13,10 +13,10 @@ import (
 
 	"github.com/gorilla/mux"
 
-	"github.com/Locky7/open-etc-pool/policy"
-	"github.com/Locky7/open-etc-pool/rpc"
-	"github.com/Locky7/open-etc-pool/storage"
-	"github.com/Locky7/open-etc-pool/util"
+	"github.com/GalaxyPool/etc-galaxypool/policy"
+	"github.com/GalaxyPool/etc-galaxypool/rpc"
+	"github.com/GalaxyPool/etc-galaxypool/storage"
+	"github.com/GalaxyPool/etc-galaxypool/util"
 )
 
 type ProxyServer struct {

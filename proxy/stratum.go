@@ -9,7 +9,7 @@ import (
 	"net"
 	"time"
 
-	"github.com/Locky7/open-etc-pool/util"
+	"github.com/GalaxyPool/etc-galaxypool/util"
 )
 
 const (
