@@ -14,8 +14,9 @@ body {
   bottom: 0;
   width: 100%;
   /* Set the fixed height of the footer here */
-  height: 80px;
+  height: 60px;
   background-color: #f5f5f5;
+  text-align: center;
 }
 
 
@@ -52,7 +53,7 @@ code {
 
 .navbar-default {
 	background-color: #04191f;
-	border-color: #69102b;
+	border-color: #1e6302;
 }
 .navbar-default .navbar-brand {
 	color: #dadada;
@@ -71,11 +72,11 @@ code {
 }
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
 	color: #ffffff;
-	background-color: #0a6c9d;
+	background-color: #1e6302;
 }
 .navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
 	color: #ffffff;
-	background-color: #69102b;
+	background-color: #1b5b02;
 }
 .navbar-default .navbar-toggle {
 	border-color: #0a6c9d;
@@ -138,8 +139,8 @@ span.logo-3 {
 }
 
 .note-info {
-	background-color: #E8F6FC;
-	border-color: #57b5e3;
+	background-color: #d5e3d5;
+	border-color: #2e6210;
 }
 
 .note-danger {
