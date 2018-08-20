@@ -56,7 +56,11 @@
 		"hashrateLargeWindow": "6h",
 		"luckWindow": [64, 128, 256, 512],
 		"payments": 30,
-		"blocks": 50
+		"blocks": 50,
+		"poolCharts":"0 */20 * * * *",
+		"poolChartsNum":216,
+		"minerCharts":"0 */20 * * * *",
+		"minerChartsNum":144
 	},
 
 	"upstreamCheckInterval": "5s",

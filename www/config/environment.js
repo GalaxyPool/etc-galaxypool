@@ -2,7 +2,7 @@
 
 module.exports = function(environment) {
   var ENV = {
-    modulePrefix: 'pool',
+    modulePrefix: 'etc-galaxypool',
     environment: environment,
     baseURL: '/',
     locationType: 'hash',
@@ -15,23 +15,51 @@ module.exports = function(environment) {
 
     APP: {
       // API host and port
-      ApiUrl: '//example.net/',
+      ApiUrl: '//115.146.122.111/',
 
       // HTTP mining endpoint
-      HttpHost: 'http://example.net',
+      HttpHost: 'http://etc.galaxypool.org',
       HttpPort: 8888,
 
       // Stratum mining endpoint
-      StratumHost: 'example.net',
+      StratumHost: 'etc.galaxypool.org',
       StratumPort: 8008,
 
       // Fee and payout details
-      PoolFee: '1%',
-      PayoutThreshold: '0.5 Ether',
-      PayoutInterval: '30 Minutes',
+      PoolFee: '0.5 %',
+      PayoutThreshold: '0.5 ETC',
+      PayoutInterval: '3 Hours',
 
       // For network hashrate (change for your favourite fork)
       BlockTime: 14.4
+
+      // Coin ticket
+      Unit: 'ETC',
+
+      //Chart config
+      highcharts: {
+        main: {
+          enabled: true,
+          height: 300,
+          type: 'areaspline',
+          color: '#357ab3',
+          title: '',
+          ytitle: '',
+          interval: 180000,
+          chartInterval: 900000
+        },
+        account: {
+          enabled: true,
+          height: 300,
+          type: 'spline',
+          color: [ '', '' ],
+          title: '',
+          ytitle: '',
+          interval: 180000,
+          chartInterval: 900000,
+          paymentInterval: 30000
+        }
+      }
     }
   };
 
